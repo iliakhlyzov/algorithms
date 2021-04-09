@@ -1,0 +1,20 @@
+{
+  "name": "algorithms",
+  "version": "1.0.0",
+  "description": "to know algorithms better",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iliakhlyzov/algorithms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iliakhlyzov/algorithms/issues"
+  },
+  "homepage": "https://github.com/iliakhlyzov/algorithms#readme"
+}
