@@ -5,13 +5,13 @@ const unsortedArray = [31, 27, 28, 42, 13, 8, 11, 30, 17, 41, 15, 43,
 let count = 0;
 
 function quickSort(coll) {
-  count += 1;
   if (coll.length < 2) return coll;
   const pivot = coll[Math.floor(coll.length / 2)];
   const left = [];
   const right = [];
 
   for (let i = 0; i < coll.length; i += 1) {
+    count += 1;
     const current = coll[i];
 
     if (pivot > current) {
