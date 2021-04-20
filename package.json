@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/iliakhlyzov/algorithms/issues"
   },
-  "homepage": "https://github.com/iliakhlyzov/algorithms#readme"
+  "homepage": "https://github.com/iliakhlyzov/algorithms#readme",
+  "dependencies": {
+    "fs": "*"
+  }
 }
