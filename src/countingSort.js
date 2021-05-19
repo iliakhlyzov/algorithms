@@ -5,7 +5,7 @@
 const array = [3,4,1,0,5,0,3,1,3];
 
 
-const countingSort = (a, b = [], k = 5) => {
+const countingSort = (a, b = [], k = []) => {
   const c = [];
   for (let i = 0; i <= k; i+= 1) {
     c[i] = 0;

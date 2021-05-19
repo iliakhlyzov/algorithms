@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    class UserService {
+  constructor(username, password) {
+    this.username = username;
+    this.password = password;
+  }
+
+  get username() {
+    return this.username;
+  }
+
+  get password() {
+    return this.password;
+  }
+
+  authenticateUser() {
+    const url = new URL('https://example.com/api/user/authenticate');
+    url.searchParams.set('username', this.getUsername());
+    url.searchParams.set('password', this.getPassword());
+
+    let xhr = new XMLHttpRequest();
+    xhr.open('GET', url);
+    xhr.onload();
+
+    const response = xhr.onload = () => {
+      if (xhr.status !== 200) { 
+        return false;
+      }
+      return true;
+    }
+
+    return response;
+  }
+  $('form #login').click(function ()) {
+    const username = $('#username');
+    const password = $('#password');
+    const  = new UserService(username, password)
+      .authenticateUser();
+    if ()
+      document.location.href = '/home'
+    } catch (er) {
+      alert()
+    }
+  }
+  </script>
+</body>
+</html>

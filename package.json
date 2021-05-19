@@ -19,5 +19,8 @@
   "homepage": "https://github.com/iliakhlyzov/algorithms#readme",
   "dependencies": {
     "fs": "*"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
   }
 }
