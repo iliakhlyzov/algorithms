@@ -1,28 +1,10 @@
+import crypto from 'crypto-js'; 
+
 class UserService {
-  var username; // некорректное определение переменных в классе
-  var password;
-
-  constructor(username, password) { 
-    this.username = username;
-    this.password = password;
-  }
-
-  // некорректное определение геттеров, имя которых совпадает с переменными
-  // можно назвать конструкторе _username
-
-  get username() { 
-    return UserService.username;
-  }
-
-  get password() {
-    throw "You are not allowed to get password";
-  }
-
-  // j
-  static authenticate_user(username, ) {
+  static authenticate_user(username, password) {
     let xhr = new XMLHttpRequest();
     xhr.open('GET', 'http://examples.com/api/user/authenticate?username=' +
-      UserService.username + '&password=' + UserService.password);
+      username + '&password=' + );
     
     xhr.responseType = 'json';
     xhr.send();
@@ -51,8 +33,4 @@ $('form #login').click(function () {
   } else {
     alert(res.error);
   }
-})
-
-/*
-помимо синтаксических, логических ошибок, 
-например, в определении класса определять переменные (var username),
+}
